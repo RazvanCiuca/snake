@@ -1,5 +1,5 @@
 #2-Player Snake
-#Version 1.0
+#Version 1.1
 #by Razvan Ciuca
 
 require 'gosu'
