@@ -8,7 +8,7 @@ require 'gosu'
 #
 class GameWindow < Gosu::Window
 	def initialize
-		super 660, 660, false, 80 #window size
+		super 660, 660, false, 80 #window size, tiling, # of milliseconds between ticks
 		self.caption = "Badger Badger Badger Badger Badger Muuushrooom Muuuushrooom"
 		@background = Gosu::Image.new(self, "#{$cwd}background.png", false)		
 		@apple_image = Gosu::Image.new(self, "#{$cwd}apple2.png", false)		
@@ -25,7 +25,7 @@ class GameWindow < Gosu::Window
 		if @reset == 1
 			@snakes[0] = Snake.new(320,320,5,self,1) #make some snakesss
 			@snakes[1] = Snake.new(320,120,5,self,2)
-			@apple = Apple.new(@snakes.inject([]){|sum,snake| sum += snake.segments}) #make the first apple	
+			@apple = Apple.new(@snakes.inject([]){|sum,snake| sum += snake.segments})	
 			@reset = 0
 		end
 		@tick += 1		
