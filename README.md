@@ -1,6 +1,6 @@
-2 Player Snake by Razvan Ciuca
+2 Player Snake!
 
-My second Ruby project, did it to learn the language.
+My second Ruby project ever!
 
 To check it out, you can either:
 
